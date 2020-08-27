@@ -339,7 +339,7 @@ and in any existing Pods that the ReplicaSet might have.
  A Deployment's rollout is triggered if and only if the Deployment's Pod template (that is, `.spec.template`)
 is changed, for example if the labels or container images of the template are updated. Other updates, such as scaling the Deployment, do not trigger a rollout.
 -->
-仅当 Deployment  Pod 模板（即 `.spec.template`）时，才会触发 Deployment 展开，例如，如果模板的标签或容器镜像已更新，其他更新（如扩展 Deployment ）不会触发展开。
+仅当 Deployment 的 Pod 模板（即 `.spec.template`）产生变化时，才会触发 Deployment 展开，例如，模板的标签或容器镜像已经更新。其他更新（如扩展 Deployment ）则不会触发展开。
 {{< /note >}}
 
 <!--
